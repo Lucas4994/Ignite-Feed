@@ -21,9 +21,9 @@ export function Post({ author, publishedAt, content }) {
         addSuffix: true
     })
 
-    const isNewCommentEmpty = newCommentText.length === 0
-
     const [newCommentText, setNewCommentText] = useState('')
+
+    const isNewCommentEmpty = newCommentText.length === 0
 
     function handleCreateNewComment() {
         event.preventDefault()
